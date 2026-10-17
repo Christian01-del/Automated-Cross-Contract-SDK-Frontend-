@@ -24,10 +24,10 @@
     "docs"
   ],
   "scripts": {
-    "build": "turbo run build --filter=\"./packages/*\"",
-    "build:sdk": "turbo run build --filter=@soroban-resurrect/sdk",
-    "build:hook": "turbo run build --filter=@soroban-resurrect/react-hook --filter=@soroban-resurrect/vue-hook --filter=@soroban-resurrect/svelte-hook",
-    "dev:example": "npm run dev -w examples/basic",
+    "build": "node init && turbo run build --filter=\"./packages/*\"",
+    "build:sdk": "node init && turbo run build --filter=@soroban-resurrect/sdk",
+    "build:hook": "node init && turbo run build --filter=@soroban-resurrect/react-hook --filter=@soroban-resurrect/vue-hook --filter=@soroban-resurrect/svelte-hook",
+    "dev:example": "node init && npm run dev -w examples/basic",
     "docs:dev": "npm run dev -w docs",
     "docs:build": "npm run build -w docs",
     "docs:preview": "npm run preview -w docs",

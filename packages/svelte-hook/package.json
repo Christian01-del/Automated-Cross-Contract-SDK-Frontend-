@@ -1,6 +1,6 @@
 {
   "name": "@soroban-resurrect/svelte-hook",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "engines": {
     "node": ">=20"
   },
@@ -42,7 +42,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "clean": "rm -rf dist",
     "typecheck": "tsc --noEmit",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
